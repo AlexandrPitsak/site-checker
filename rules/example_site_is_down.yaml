@@ -1,0 +1,7 @@
+url: https://fbawdawdawdawdaf.com
+rules:
+  - rule: must_have   # must_have or one_of
+    values:           # shouldn't be checked
+      - example       
+      - Please Login       
+      - Subscribe       

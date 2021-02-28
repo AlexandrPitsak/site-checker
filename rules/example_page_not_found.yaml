@@ -1,0 +1,7 @@
+url: https://google.com/not_existing_path
+rules:
+  - rule: must_have  # must_have / one_of
+    values:          # shouldn't be checked
+      - Magazine
+      - Applause
+      - Sun

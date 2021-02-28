@@ -1,0 +1,12 @@
+url: https://bing.com
+rules:
+  - rule: must_have  # must_have / one_of
+    values:
+      - something    
+      - Please       
+      - msg         
+  - rule: one_of 
+    values:
+      - summer    
+      - time       
+      - msg         

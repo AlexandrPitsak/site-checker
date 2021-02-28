@@ -1,0 +1,8 @@
+config:
+  interval_in_sec: 30
+  rules_path: rules/*.yaml
+  log_file_name: log.txt
+
+
+
+

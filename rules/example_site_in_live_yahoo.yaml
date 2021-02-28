@@ -1,0 +1,7 @@
+url: https://yahoo.com
+rules:
+  - rule: must_have     # must_have / one_of
+    values:
+      - something
+      - Please      
+      - msg                   
