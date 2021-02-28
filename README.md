@@ -14,13 +14,13 @@ Write result to console (by default, but can be turned off) and log file (txt an
 2. Install and run virtual environment
     - Linux/Mac 
     ```shell
-    $ pip3 install -U virtualenv
-    $ python3 -m virtualenv venv
-    $ source venv/bin/activate
+    python3 -m pip install -U virtualenv
+    python3 -m virtualenv venv
+    source venv/bin/activate
     ```
     - Windows
     ```
-    pip3 install -U virtualenv
+    python3 -m pip install -U virtualenv
     python3 -m virtualenv venv
     venv\Scripts\activate.bat
     ```
@@ -28,7 +28,7 @@ Write result to console (by default, but can be turned off) and log file (txt an
 3. Install requirements
 
     ```bash
-    pip3 install -r requirements.txt
+    python3 -m pip install -r requirements.txt
     ```
 
 4. Configure application
