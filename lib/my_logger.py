@@ -2,8 +2,7 @@ import logging
 from lib.data_loader import get_config_data
 
 
-
-def logger(message, level = logging.INFO, console_log = True):
+def logger(message, level=logging.INFO, console_log=True, ):
     config = get_config_data()
     log_name = config['config']['log_file_name']
     fmt = '%(levelname)s  %(asctime)s  \n%(message)s'
@@ -17,15 +16,13 @@ def logger(message, level = logging.INFO, console_log = True):
         console.setFormatter(formatter)
         logging.getLogger("").addHandler(console)
 
-
-
-    if (level == logging.INFO):
+    if level == logging.INFO:
         logging.info(message)
 
-    if (level == logging.ERROR):
+    if level == logging.ERROR:
         logging.error(message)
 
-    if (level == logging.CRITICAL):
+    if level == logging.CRITICAL:
         logging.critical(message)
 
     logging.getLogger("").removeHandler(console)

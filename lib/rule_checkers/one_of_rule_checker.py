@@ -1,4 +1,3 @@
-
 def check_one_of_rule(values, response_text):
     results = []
     result = {"rule": "one_of", "value": values, "result": False }

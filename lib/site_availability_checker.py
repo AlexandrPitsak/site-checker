@@ -1,5 +1,6 @@
 import requests
 
+
 def check_availability(config, timeout=3):
     result = {}
 

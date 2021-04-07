@@ -11,7 +11,7 @@ def get_site_data(config):
 
     availability_data = check_availability(config)
 
-    if 'error' in availability_data: # data for connection Error or invalid url
+    if 'error' in availability_data:  # data for connection Error or invalid url
         site_data.update({
                 'has_passed': False,
                 'error': availability_data['error']
@@ -19,7 +19,7 @@ def get_site_data(config):
 
         return site_data
 
-    response = availability_data['response'] # response with code 200 or >= 400
+    response = availability_data['response']  # response with code 200 or >= 400
     
     site_data.update({
         "response_time": str(response.elapsed),
@@ -27,7 +27,7 @@ def get_site_data(config):
     })
 
     if not availability_data['available']: 
-        site_data.update({'has_passed': False })
+        site_data.update({'has_passed': False})
 
         return site_data   
 

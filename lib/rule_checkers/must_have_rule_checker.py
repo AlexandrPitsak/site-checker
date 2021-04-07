@@ -1,4 +1,3 @@
-
 def check_must_have_rule(values, response_text):
     results = []
 
